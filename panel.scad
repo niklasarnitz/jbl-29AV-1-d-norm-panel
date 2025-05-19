@@ -137,10 +137,10 @@ difference() { // Final difference for Speakon connector cutouts
     }
 
     // Mounting holes for Speakon
-    translate([-speakon_mount_distance/2, (speakon_diameter/2 - speakon_mount_diameter/2), very_bottom_z - 0.01]) {
+    translate([speakon_mount_distance/2, (speakon_diameter/2 - speakon_mount_diameter/2), very_bottom_z - 0.01]) {
         cylinder(h = cutout_total_height, d=speakon_mount_diameter, center=false);
     }
-    translate([speakon_mount_distance/2, -(speakon_diameter/2 - speakon_mount_diameter/2), very_bottom_z - 0.01]) {
+    translate([-speakon_mount_distance/2, -(speakon_diameter/2 - speakon_mount_diameter/2), very_bottom_z - 0.01]) {
         cylinder(h = cutout_total_height, d=speakon_mount_diameter, center=false);
     }
 }
